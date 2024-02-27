@@ -1,20 +1,22 @@
 function getCpuChoice() {
-    num = Math.floor(Math.random()*(4-1))+1
+    const num = Math.floor(Math.random()*(4-1))+1;
+    let choice;
+
     if (num === 1){
-        choice = 'Rock'
+        choice = 'Rock';
     }
     else if (num === 2){
-        choice = 'Paper'
+        choice = 'Paper';
     }
     else {
-        choice = 'Scissors'
+        choice = 'Scissors';
     }
 
-    return choice
+    return choice;
 }
 
 function playerSelection() {
-    //prompt and input // 
+     
 }
 
 function playRound (playerChoice, CPUchoice) {
@@ -24,4 +26,6 @@ function playRound (playerChoice, CPUchoice) {
 
 //loop play and reset//
 
-getCpuChoice()
+let x = getCpuChoice()
+
+console.log(x)

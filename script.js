@@ -1,5 +1,16 @@
 function getCpuChoice() {
-    //some rng //
+    num = Math.floor(Math.random()*(4-1))+1
+    if (num === 1){
+        choice = 'Rock'
+    }
+    else if (num === 2){
+        choice = 'Paper'
+    }
+    else {
+        choice = 'Scissors'
+    }
+
+    return choice
 }
 
 function playerSelection() {
@@ -12,3 +23,5 @@ function playRound (playerChoice, CPUchoice) {
 
 
 //loop play and reset//
+
+getCpuChoice()

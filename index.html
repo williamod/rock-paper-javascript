@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Rock, Paper, Scissors!</title>
 </head>
 <body>
+    <h1>Rock, Paper, Scissors!</h1>
+    <div class="button-box">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+    <div class="display-box">
+        <div class="pick-heads">
+            <div class="player-head">Player Choice:</div>
+            <div class="cpu-head">CPU Choice:</div>
+            
+        </div>
+        <div class="picks">
+            <div class="player"></div>
+            <div class="cpu"></div>
+            
+        </div>
+        <div class="wins"></div>
+    </div>
     
+    <style>
+        body {
+            background-color: #181818;
+        }
+        h1 {
+            color: gray;
+            text-align: center;
+            font-size: 64px;
+        }
+        button {
+            background-color: aqua;
+            border-color: gray;
+            padding: 10px 20px;
+            border-radius: 12px;
+        }
+        .button-box {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .choice {
+            color: white;
+        }
+        .display-box {
+            margin-top: 64px;
+            color: gray;
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .picks, .pick-heads {
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        .picks {
+            min-height: 32px;
+        }
+
+        .wins {
+            margin-top: 64px;
+            align-self: center;
+        }
+    </style>
 </body>
 </html>
